@@ -1,0 +1,57 @@
+.NetflixThumbnails {
+  background-color: aqua;
+  position: absolute;
+  width: 5000px;
+  height: 320px;
+  left: 0px;
+}
+
+.NetflixThumbnails .NetflixThumbnails__contenido {
+  background-color: brown;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  top: calc( 160px - 150px);
+  width: 200px;
+  height: 300px;
+  margin-left: 10px;
+}
+
+.NetflixThumbnails .NetflixThumbnails__contenido h2 {
+  color: white;
+  text-align: center;
+  font-size: 2.5em;
+}
+
+.NetflixThumbnails .NetflixThumbnails__contenido p {
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.NetflixThumbnails__contenido__avanzar {
+  position: absolute;
+  background-color: none;
+  width: 50px;
+  left: calc( 100vw - 50px);
+  height: 320px;
+  z-index: 1;
+}
+
+.NetflixThumbnails__contenido__avanzar:hover {
+  background-color: yellow;
+}
+
+.NetflixThumbnails__contenido__retroceder {
+  position: absolute;
+  background-color: none;
+  left: 0;
+  width: 50px;
+  height: 320px;
+  z-index: 1;
+}
+
+.NetflixThumbnails__contenido__retroceder:hover {
+  background-color: yellow;
+}
+/*# sourceMappingURL=NetflixThumbnails.css.map */
