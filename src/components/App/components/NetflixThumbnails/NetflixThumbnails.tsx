@@ -1,14 +1,19 @@
 import './assets/NetflixThumbnails.css'
 import React, { useRef } from 'react'
 
+interface Props{
+  lista:any[]
+} 
 
-export default function NetflixThumbnails( { lista } ) {
 
-  const refNetflixThumbnails = useRef(null)
-    let eKey = 0
-    let posicionActual = 0
 
-    let Avanzar= (elementoDOM)=>{
+export default function NetflixThumbnails( { lista }:Props ) {
+
+  const refNetflixThumbnails = useRef<HTMLDivElement>(null)
+    let eKey:number = 0
+    let posicionActual:number = 0
+
+    let Avanzar= (elementoDOM:HTMLElement)=>{
       
       if (posicionActual <= (lista.length * -200) + (window.innerWidth -100) ) {
         posicionActual = 100
@@ -19,7 +24,7 @@ export default function NetflixThumbnails( { lista } ) {
       
     }
 
-    let Retroceder= (elementoDOM)=>{
+    let Retroceder= (elementoDOM:HTMLElement)=>{
       
       if (posicionActual >= 0) {
         console.log('Mayor')

@@ -1,5 +1,5 @@
 import './assets/App.css'
-import NetflixThumbnails from './components/NetflixThumbnails/NetflixThumbnails.js'
+import NetflixThumbnails from './components/NetflixThumbnails/NetflixThumbnails.tsx'
 
 export default function App() {
   return (
