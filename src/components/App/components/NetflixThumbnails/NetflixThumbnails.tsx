@@ -13,13 +13,13 @@ export default function NetflixThumbnails( { lista }:Props ) {
     let eKey:number = 0
     let posicionActual:number = 0
 
-    let Avanzar= (elementoDOM:HTMLElement)=>{
+    let Avanzar= (elementoDom:HTMLElement)=>{
       
       if (posicionActual <= (lista.length * -200) + (window.innerWidth -100) ) {
         posicionActual = 100
       }
       posicionActual -= 100
-      elementoDOM.style.left = posicionActual +'px'
+      elementoDom.style.left = posicionActual +'px'
       console.log(posicionActual)
       
     }
